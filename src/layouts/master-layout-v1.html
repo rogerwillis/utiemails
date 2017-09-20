@@ -1,0 +1,339 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <link rel="stylesheet" type="text/css" href="{{root}}css/app.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    {{> master-meta-v1}}
+    {{> fonts-v1}} 
+    <title>{{subject}}</title>
+    <!--[if mso]>
+		<style type='text/css'>
+		.primary-font {
+		font-family: "Arial Narrow", sans-serif !important;
+		}
+		</style>
+		<![endif]--> 
+    <!--[if mso]>
+		<style type='text/css'>
+		.secondary-font {
+		font-family: Arial, sans-serif !important;
+		}
+		</style>
+		<![endif]--> 
+    <style>
+			/*startcommon*/
+			@media only screen and (max-width: 640px) {
+				table.m_boxing{
+					width: 100% !important;
+				}
+			}
+			/*endcommon*/
+		</style> 
+    <style media="all">
+/* CLIENT-SPECIFIC STYLES */
+#outlook a {
+  padding: 0;
+}
+/* Force Outlook to provide a "view in browser" message */
+.ReadMsgBody {
+  width: 100%;
+}
+.ExternalClass {
+  width: 100%;
+}
+/* Force Hotmail to display emails at full width */
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+/* Force Hotmail to display normal line spacing */
+/* iOS BLUE LINKS */
+.appleBody a {
+  color: .m_000;
+  text-decoration: none;
+}
+.appleFooter a {
+  color: .m_000;
+  text-decoration: none;
+}
+@-ms-viewport { 
+    width: device-width; 
+}
+
+</style> 
+    <style media="all">
+@media only screen and (max-width: 640px) {
+
+/*starttablet*/
+
+	.mktoVideoThumbnail{
+		width: 100% !important;
+		height: auto!important;
+		max-height:inherit!important;
+		min-height:inherit!important;
+	}
+
+body {
+	width: auto !important;
+}
+
+table.table600 {
+	width: 450px !important;
+}
+
+table.table-inner{
+	width: 86% !important;
+}
+
+table.table1-2{
+	width: 47% !important;
+	clear: both;
+}
+
+table.table1-3{
+	width: 29.4% !important;
+}
+
+table.table1-4{
+	width: 100% !important;
+	text-align: left !important;
+}
+
+table.table2-3{
+	width: 64% !important;
+	text-align: center !important;
+}
+
+table.table3-3{
+	width: 100% !important;
+	text-align: center !important;
+	clear: both;
+}
+
+table.footer-logo{
+	width: 10% !important;
+	text-align: right !important;
+}
+
+td.outer{
+	min-width: 0 !important;
+}
+
+td.stack{
+	padding-bottom: 40px !important;
+}
+
+.stack-tablet {
+	padding-bottom: 20px !important;
+	overflow: visible !important;
+	float: none !important;
+	mso-hide: none !important;
+	display: block !important;
+}
+
+img.mobile-img{
+	width: 100% !important;
+	height: auto !important;
+}
+
+td.center-tablet{
+	text-align: center !important;
+}
+
+td.hide-tablet{
+	display: none !important;
+}
+
+table.footer-column{
+	width: 47% !important;
+	text-align: left !important;
+}
+
+tr.stack-tablet{
+	padding-bottom: 0 !important;
+	display: block !important;
+}
+
+.respimage,
+.m_free-image .table600 {
+	width: 450px !important;
+	height: auto;
+}
+
+.m_team .spacer {
+	width: 26px;
+}
+
+.m_header td.center-tablet {
+	text-align: center !important;
+}
+
+.m_header td a {
+	margin-top: 0px !important;
+}
+
+.m_header .cta table {
+	float: none !important;
+	margin-top: 0 !important;
+	margin-right: auto !important;
+	margin-bottom: 0 !important;
+	margin-left: auto !important;
+}
+ 
+.m_header .social {
+	text-align: center !important;
+}
+
+.m_two-articles .table1-2 {
+	width: 100% !important;
+}
+
+.m_two-articles img {
+	width: 100% !important;
+	height: auto;
+}
+
+.m_two-articles .stack-tablet {
+	height: 40px;
+}
+
+.m_contacts .table1-3 {
+	width: 100% !important;
+	clear: both;
+}
+
+.m_footer .table1-2 {
+	width: 100% !important;
+	clear: both;
+}
+
+.m_footer .text,
+.m_footer .unsub {
+	text-align: center !important;
+}
+
+/*endtablet*/
+
+}
+
+@media only screen and (max-width: 479px) {
+
+/*startmobile*/
+
+body {
+	width: auto !important;
+}
+
+table.table600{
+	width: 290px !important;
+}
+
+table.table-inner{
+	width: 80% !important;
+	float: none !important;
+}
+
+table.table1-2{
+	width: 100% !important;
+	clear: both;
+}
+
+table.table1-3{
+	width: 100% !important;
+	clear: both;
+}
+
+table.table1-4{
+	width: 100% !important;
+	text-align: center !important;
+}
+
+table.table2-3{
+	width: 100% !important;
+	text-align: center !important;
+}
+
+table.table3-3{
+	width: 100% !important;
+	text-align: center !important;
+	clear: both;
+}
+
+table.footer-logo{
+	width: 60% !important;
+	text-align: center !important;
+}
+
+td.outer{
+	min-width: 0 !important;
+}
+
+td.td3-1{
+	width: 60% !important;
+	text-align: center !important;
+}
+
+.stack-smartphone {
+	padding-bottom: 20px !important;
+	overflow: visible !important;
+	float: none !important;
+	display: block !important;
+	mso-hide: none !important;
+}
+
+td.center-smartphone{
+	text-align: center !important;
+}
+
+img.mobile-img{
+	width: 100% !important;
+}
+
+td.center-tablet{
+	text-align: center !important;
+}
+
+td.hide-smartphone{
+	display: none !important;
+}
+
+table.footer-column{
+	width: 100% !important;
+	text-align: center !important;
+}
+
+.respimage,
+.m_free-image .table600 {
+	width: 290px !important;
+	height: auto;
+}
+
+/*endmobile*/
+
+}
+</style> 
+  </head>
+  <body>
+    <table class="body">
+      <tr>
+        <td class="mktoContainer boxedbackground container" id="template-wrapper" align="center" valign="top">
+         
+            {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened emails are created. --}}
+           test {{> body}}
+         
+        </td>
+      </tr>
+    </table>
+    <!-- prevent roger on iOS font size manipulation -->
+   <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+  </body>
+</html>
+
